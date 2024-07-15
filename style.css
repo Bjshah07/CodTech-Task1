@@ -1,0 +1,147 @@
+/**
+ * Resets default browser styles for margin, padding, and box-sizing.
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+ * Styles the main container element.
+ */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(black, blue, black);
+    padding: 3vh;
+}
+
+/**
+ * Styles the main content element.
+ */
+.main {
+    width: 100%;
+    max-width: 40vw;
+    background-color: white;
+    margin: 10vh auto 5vh;
+    padding: 2vw;
+    background-color: black;
+    border-radius: 4vw;
+}
+
+/**
+ * Styles the h2 heading element within the main content element.
+ */
+.main h2 {
+    font-size: 2.5vw;
+    color: rgb(112, 11, 207);
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+/**
+ * Styles the search input container element.
+ */
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(180, 175, 181);
+    border-radius: 2vw;
+    padding-left: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+/**
+ * Styles the search input element.
+ */
+.search input {
+    flex: 1;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+/**
+ * Styles the "Add" button element.
+ */
+#add {
+    background-color: rgb(226, 53, 10);
+    color: white;
+    border: none;
+    padding: 2vh 2.5vw;
+    border-radius: 2vw;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+/**
+ * Styles the "Add" button element on hover.
+ */
+#add:hover {
+    background-color: rgb(40, 160, 224);
+}
+
+/**
+ * Styles the unordered list element.
+ */
+ul li {
+    list-style: none;
+    font-size: 4vh;
+    padding: 1vh 1vw 1vh 3vw;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+
+/**
+ * Styles the pseudo-element for the list item checkbox.
+ */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 3vh;
+    width: 1.5vw;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 1vw;
+    left: 1vw;
+}
+
+/**
+ * Styles the list item element when checked.
+ */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/**
+ * Styles the pseudo-element for the list item checkbox when checked.
+ */
+ul li.checked::before {
+    background-image: url(img/checked.png);
+}
+
+/**
+ * Styles the span element for the list item delete button.
+ */
+ul li span {
+    color: white;
+    right: 2vw;
+    position: absolute;
+}
+
+/**
+* Styles the span element for the list item delete button on hover.
+*/
+ul li span:hover {
+    color: red;
+}

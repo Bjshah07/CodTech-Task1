@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+  TO DO LIST HTML 
+
+  This HTML  provides a basic structure for a TO DO LIST application.
+  It includes a search bar, an add button, and a list container to display tasks.
+
+  Example:
+  This template can be used to create a simple TO DO LIST application.
+  Users can enter tasks in the search bar and click the add button to add them to the list.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--------------Body of the HTML document-------->
+    <div class="container">
+        <div class="main">
+            <h2> To Do List</h2>
+           
+            <div class="search">
+
+                <!--------------Search bar to enter tasks------------------->
+                <input type="text" placeholder="Enter the work" id="enter">
+
+                <!--------------Add button to add tasks to the list---------->
+                <button id="add">Add</button>
+            </div>
+
+            <ul class="list-container"></ul>
+
+        </div>
+    </div>
+    <script src="control.js"></script>
+</body>
+
+</html>
